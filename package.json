@@ -1,0 +1,27 @@
+{
+  "name": "kodilla-jquery2",
+  "version": "1.0.0",
+  "description": "jquery2",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taurus83/jQuery2.git"
+  },
+  "keywords": [
+    "jquery-carousel"
+  ],
+  "author": "Piotr Rucinski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taurus83/jQuery2/issues"
+  },
+  "homepage": "https://github.com/Taurus83/jQuery2#readme"
+}
