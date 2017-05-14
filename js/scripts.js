@@ -24,10 +24,6 @@ $(function() {
 		carouselList.css({marginLeft: 0});
 	};
 
-	changeSlides();
-		moveFirstSlide();
-		moveLastSlide();
-
 		$("#right-button").on('click', moveFirstSlide);
 		$("#left-button").on('click', moveLastSlide);
 });	
