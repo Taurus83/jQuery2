@@ -15,16 +15,19 @@ body {
     line-height: 1.5;
 }
 
-div #carousel {
-	width: 550px;
-	overflow: auto;
-	position: center;
+#carousel {
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	width: 550px; 
+	height: 330px;
 }
 
 #carousel ul {
 	width: 2000px;
 	padding: 0;
 	margin: 0;
+	list-style: none
 }
 
 #carousel ul li {
@@ -33,4 +36,15 @@ div #carousel {
 	height: 330px;
 	list-style: none
 	float: left;
+}
+
+
+#directions {
+	text-align: center;
+}
+
+#left-button, #right-button {
+	display: inline-block;
+	cursor: pointer;
+	margin: 10px;
 }
