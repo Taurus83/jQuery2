@@ -10,29 +10,26 @@ $(function() {
 
 	function moveFirstSlide() {
 		var firstItem = carouselList.find("li:first");
-		var lastItem = carouselList.find("li:last")
+		var lastItem = carouselList.find("li:last");
 	
 		lastItem.after(firstItem);
 		carouselList.css({marginLeft: 0});
 	};
+
+	function moveLastSlide() {
+		var firstItem = carouselList.find("li:last");
+		var lastItem = carouselList.find("li:first");
+	
+		lastItem.before(firstItem);
+		carouselList.css({marginLeft: 0});
+	};
+
 	changeSlides();
-	moveFirstSlide();
+		moveFirstSlide();
+		moveLastSlide();
 
-	var move = 0;
-		$("#right-button").click(function(){
-    	move += 550;
-    	$("#carousel ul").animate({
-      	marginLeft: move+"px"
-    	}, 500);
-	});
-
-		$("#left-button").click(function(){
-    	move -= 550;
-    	$("#carousel ul").animate({
-      	marginLeft: move+"px"
-    	}, 500);
-	});
-
+		$("#right-button").on('click', moveFirstSlide);
+		$("#left-button").on('click', moveLastSlide);
 });	
 
 
